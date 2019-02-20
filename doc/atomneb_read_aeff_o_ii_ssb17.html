@@ -364,9 +364,10 @@
           <div><p>    For example:
 <div><div><code class="listing"><span class="code-prompt">IDL&gt;</span> base_dir = file_dirname(file_dirname((routine_info('$MAIN$', /source)).path))
 <span class="code-prompt">IDL&gt;</span> data_rc_dir = ['atomic-data-rc']
-<span class="code-prompt">IDL&gt;</span> Atom_RC_file= filepath('rc_n_iii_FSL13.fits', root_dir=base_dir, subdir=data_dir )
+<span class="code-prompt">IDL&gt;</span> Atom_RC_file= filepath('rc_o_iii_SSB17.fits', root_dir=base_dir, subdir=data_dir )
 <span class="code-prompt">IDL&gt;</span> atom='o'
 <span class="code-prompt">IDL&gt;</span> ion='iii' ; O II
+<span class="code-prompt">IDL&gt;</span> case1='B'
 <span class="code-prompt">IDL&gt;</span> wavelength_range=[5320.0, 5330.0]
 <span class="code-prompt">IDL&gt;</span> oii_rc_data=atomneb_read_aeff_o_ii_ssb17(Atom_RC_file, atom, ion, case1, wavelength_range)
 <span class="code-prompt">IDL&gt;</span> oii_rc_data_wave=atomneb_read_aeff_o_ii_ssb17(Atom_RC_file, atom, ion, case1, wavelength_range, /wavelength)
